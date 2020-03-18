@@ -23,6 +23,7 @@ High Performance Delete Redis Script
 hp latebook pro 2核 8G内存 
 
 ### 开200个协程，插入10W条数据
+![image](https://github.com/iooikaak/delRedisScript/blob/master/pic/11.png)
 ```
 vagrant@ubuntu-bionic:~/Dev/code/go/src/delRedisScript$ go run main.go -readRedisHost "127.0.0.1:6379" -readRedisPassword "" -writeRedisHost "127.0.0.1:6379" -writeRedisPassword "" -userIDMinNum 1 -userIDMaxNum 100000 -goRoutineCount 200
 2020/03/18 09:46:54 Del Redis Key Script Has Done!!!
@@ -30,6 +31,7 @@ vagrant@ubuntu-bionic:~/Dev/code/go/src/delRedisScript$ go run main.go -readRedi
 ```
 QPS：100000/3.531646813= 28315
 ### 开1W个协程，插入1000W条数据
+![image](https://github.com/iooikaak/delRedisScript/blob/master/pic/12.png)
 ```
 vagrant@ubuntu-bionic:~/Dev/code/go/src/delRedisScript$ go run main.go -readRedisHost "127.0.0.1:6379" -readRedisPassword "" -writeRedisHost "127.0.0.1:6379" -writeRedisPassword "" -userIDMinNum 1 -userIDMaxNum 10000000 -goRoutineCount 10000
 2020/03/18 09:50:10 Del Redis Key Script Has Done!!!
@@ -37,6 +39,7 @@ vagrant@ubuntu-bionic:~/Dev/code/go/src/delRedisScript$ go run main.go -readRedi
 ```
 QPS: 10000000/20.672395724=483736
 ### 开5W个协程，插入1000W条数据
+![image](https://github.com/iooikaak/delRedisScript/blob/master/pic/13.png)
 ```
 vagrant@ubuntu-bionic:~/Dev/code/go/src/delRedisScript$ go run main.go -readRedisHost "127.0.0.1:6379" -readRedisPassword "" -writeRedisHost "127.0.0.1:6379" -writeRedisPassword "" -userIDMinNum 1 -userIDMaxNum 10000000 -goRoutineCount 50000
 2020/03/18 09:52:23 Del Redis Key Script Has Done!!!
@@ -44,6 +47,7 @@ vagrant@ubuntu-bionic:~/Dev/code/go/src/delRedisScript$ go run main.go -readRedi
 ```
 QPS: 10000000/9.540742779=1048136
 ### 开10W个协程，插入1000W条数据
+![image](https://github.com/iooikaak/delRedisScript/blob/master/pic/14.png)
 ```
 vagrant@ubuntu-bionic:~/Dev/code/go/src/delRedisScript$ go run main.go -readRedisHost "127.0.0.1:6379" -readRedisPassword "" -writeRedisHost "127.0.0.1:6379" -writeRedisPassword "" -userIDMinNum 1 -userIDMaxNum 10000000 -goRoutineCount 100000
 2020/03/18 09:58:40 Del Redis Key Script Has Done!!!
