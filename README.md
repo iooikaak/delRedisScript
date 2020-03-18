@@ -42,11 +42,11 @@ vagrant@ubuntu-bionic:~/Dev/code/go/src/delRedisScript$ go run main.go -readRedi
 2020/03/18 09:52:23 Del Redis Key Script Has Done!!!
 2020/03/18 09:52:23 Start Unix Time:1584525133518306707, End Unix Time:1584525143059049486, Run time:9540742779
 ```
-QPS: 10000000/9.540742779=924374
+QPS: 10000000/9.540742779=1048136
 ### 开10W个协程，插入1000W条数据
 ```
-vagrant@ubuntu-bionic:~/Dev/code/go/src/addRedisScript$ go run main.go -readRedisHost "127.0.0.1:6379" -readRedisPassword "" -writeRedisHost "127.0.0.1:6379" -writeRedisPassword "" -userIDMinNum 1 -userIDMaxNum 10000000 -goRoutineCount 100000
-2020/03/18 09:19:56 Add Redis Key Script Has Done!!!
-2020/03/18 09:19:56 Start Unix Time:1584523186976773055, End Unix Time:1584523196774139671, Run time:9797366616 
+vagrant@ubuntu-bionic:~/Dev/code/go/src/delRedisScript$ go run main.go -readRedisHost "127.0.0.1:6379" -readRedisPassword "" -writeRedisHost "127.0.0.1:6379" -writeRedisPassword "" -userIDMinNum 1 -userIDMaxNum 10000000 -goRoutineCount 100000
+2020/03/18 09:58:40 Del Redis Key Script Has Done!!!
+2020/03/18 09:58:40 Start Unix Time:1584525512462187917, End Unix Time:1584525520102865051, Run time:7640677134
 ```
-QPS:10000000/9.797366616=1020682
+QPS:10000000/7.640677134=1308784
