@@ -20,7 +20,7 @@ High Performance Delete Redis Script
 
 ## bechmark测试
 - 测试机器
-hp latebook pro 2核 8G内存 
+hp latebook pro 4核 8G内存 
 
 ### 开200个协程，插入10W条数据
 ![image](https://github.com/iooikaak/delRedisScript/blob/master/pic/11.png)
