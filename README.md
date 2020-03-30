@@ -7,8 +7,7 @@ High Performance Delete Redis Script
 
 ### Features
 - 高性能，bechmark测试
-- 支持开10W协程并发删除redis
-- QPS可以达到100W
+- 支持开1W协程并发删除redis
 
 #	依赖
 ## 硬件平台
